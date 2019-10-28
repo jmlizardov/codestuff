@@ -1,0 +1,12 @@
+<label for"atributo"> + <input id="atributo" + type="especificar el tipo de label" + name="especificar la categoria"> + atributo </label>
+
+Ejemplo
+
+<label for="football"> <input id="football" type="radio" name="sports"> football </label>
+
+    Cuando la data es enviada, al estar especificado el codigo como se despliega anteriormente, se envia por default el atributo on.
+    Si queremos que se obtenga la data especifica, es decir, que se reciba como "football", es necesario especificar: value="football".
+    
+<label for="football"> <input id="football" type="radio" name="sports" value="football"> football </label>
+
+'checked' despues de 'name' para premarcar una opcion.
