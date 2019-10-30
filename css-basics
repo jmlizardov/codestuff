@@ -1,0 +1,114 @@
+En lo que respecta a estilos de color se utiliza el atributo 'style'.
+Por ejemplo, si lo que vamos es a representar un headline:
+
+  <h2 style="color: blue;"> Siempre es necesario cerrar con un ;
+  
+El caso anterior especifica solo para el H2, pero si quieres gnlobar todos los 'h2', el codigo es el sig
+  
+  <style>
+  h2 {
+    color: red;
+  }
+</style>
+
+Atajo:
+
+Utilizar la declaracion inicial de:
+  
+        <style>
+          .red-text {
+          color: red;
+          }
+        </style> 
+        
+ Esto permite acortar el codigo a:
+        
+        <h2 class="red-text">CatPhotoApp</h2>
+        
+        
+        
+Fuentes:
+(font-size) tamano
+(font-family) fuente
+
+Para importar fuentes de Google es necesario copiar el link de esta antes del atributo 'style'.
+Despues es posible aplicarlo a cada estructura.
+
+Tamanos (width)
+  larger-image
+  smaller-image
+  
+Cada espacio debe estar abierto y cerrado con una etiqueta de tag.
+  
+  <style> para texto </style>
+  <style> para imagen </style>
+  
+Es posible especificar varios elementos class en uno solo:
+  <img class="class1 class2">
+  
+Atributos para modificar bordes:
+
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px (tmbn %);
+    background-color
+    
+Atributos ID
+  Son importantes para especificar y hacer shortcuts de ciertas partes del codigo.
+  
+  Para darle un determinado aspecto a un id, es necesario hacerlo en el codigo css precediendo mediante un #.
+
+Padding es el espacio dentro de un cuadrado o su relacion de aspecto.
+Border es lo que lo contiene.
+Margin el espacio entre los elementos y border.
+
+Control de las diferentes partes del padding: padding-top, padding-right, padding-bottom, and padding-left/
+  shortcut: padding 10px(top), 30px(right), 40px(bottom), 10px(left)
+  Esto va en las agujas del reloj = clockwise notation.
+  
+  CSS Selector
+    Atributte Selectors - darle estilo a partes especificas del cod. Por ej:
+  Supongamos que tenemos el elemento 'checkbox', 
+  
+    [type='checkbox'] {
+    margin:
+    }
+
+Unidades absolutas (inches, millimiters(
+Unidades relativas (em(en base al tamano de la fuente)
+    
+Conflictos en los estilos: siempre va a prevalecer el ultimo estilo aplicado (el de abajo). CSS lee de abajo hacia arriba.
+  
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  
+  
+Formas de dar estilos:
+html (id) css (#)
+html (inline style = p style: color: x)
+html (class) css (.)
+
+!important (destaca la prevalecencia de un estilo sobre cualquier otro).
+
+Añadir variables que permitan cambiar todos los elementos en css con un mismo atributo:
+  Para ello, es necesario esté precedido por --(nombre). Esto permitira asignar dicho elemento a otros
+  bajo el prefijo de VAR.
+  
+  
+  Ejemplo --ball-color: orange;
+  
+            background: var(--ball-color);
+
+  Supongamos que escribimos mal el termino ball, siempre es ideal tener un sustituto (debugging)
+  
+            background: var(--ball-color, orange);
+            
+La utilizacion de :root permite crear variables disponibles para todo el CSS.            
+
+    
