@@ -1,0 +1,54 @@
+Es posible editar el fondo de una determinada parte del texto, por ejemplo, de los encabezados. 
+
+Para dar apariencia de sombra, se utiliza:
+
+The box-shadow property takes values for
+  offset-x (how far to push the shadow horizontally from the element),
+  offset-y (how far to push the shadow vertically from the element),
+  blur-radius,
+  spread-radius and
+  color, in that order.
+  
+  Value	Result
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial	Use the default value
+inherit	Use the text-transform value from the parent element
+none	Default: Use the original text
+
+
+Line-heigh se utiliza para cambiar el interlineado.
+
+
+      PSEUDO-CLASSES = aquellos elementos que se pueden configurar directamente desde el codigo en css.
+      Ejemplo, si queremos modificar el elemento 'hover' de un elemento 'anchor'. a: hover.
+      
+      
+ Relative: si se especifica dentro del codigo css, permite la movilizacion de elementos respecto a este y se puede combinar con:
+  bottom
+  top
+  right
+  left
+  
+     Offset: https://cdn-media-1.freecodecamp.org/imgr/eWWi3gZ.gif. Mueve en direcciones opuestas. Si es a la derecha, se desplaza a la izq.
+     Se trata de un movimiento flotante interno. Como una pelota en una jaula.
+     
+Para que un elemento quede inmovilizado al desplazarse en la barra, debe ser etiquetado como 'fixed'.
+
+'Float' se utiliza para desplazar de izquierda a derecha algun elemento (maquetacion).
+
+
+      Existe un overlapping cuando un elemento en HTML va despues del otro. Esto es posible evitarlo con z-index.
+      Por ejemplo, un recuadro azul tiene z-index (7) y el rojo (8). Estara por encima el de mayor cuantia.
+      
+Aplicar gradientes = background-color: linear-gradient(gradient direction(deg), color 1, 2, 3.
+
+Para repetir gradientes, se utiliza: repeating-linear-gradient.
+Hacer transiciones suaves debe empezar y terminar con la suma de cada parte. 
+
+Escalar imagenes = transform: scale (num a escalar).
+
+        ******HOVER******* permite que cuando toques un elemento, este sea interactivo.
+        
+Empty string = "";
