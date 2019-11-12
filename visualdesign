@@ -52,3 +52,40 @@ Escalar imagenes = transform: scale (num a escalar).
         ******HOVER******* permite que cuando toques un elemento, este sea interactivo.
         
 Empty string = "";
+
+
+Animaciones: existen ocho tipos enmarcadas bajo @framework, pero las mas importantes son:
+  animation-name:
+  animation-duration:
+  
+  Se trabajan en un rango de porcentaje, de 0 a 100, donde 0 es el comienzo y 100 el final.
+  
+      #anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+Para hacer que una animacion por medio del comando 'hover'. se quede con el resultado final, se aplica:
+    animation-fill-mode: forwards;
+
+Es posible hacer que las animaciones se muevan por medio de los comandos de left, top, right, bottom.
+
+    animation-iteration-count sirve para especificar la cantidad de veces que se quiera repetir la animacion.
+    animation-timing-function sirve para especificar cuan rapido o lento se mueve un elemento en determinado punto de la animacion.
+    
+
+Curvas Bezier:
+  Eje-X determina la duracion.
+  Eje-Y determina el cambio de la animacion.
+
+
+
