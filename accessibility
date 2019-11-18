@@ -1,0 +1,10 @@
+Article es para un tema especifico y section es para un conjunto de temas que lo agrupan. Libro (Article) Capitulos (section).
+
+Audio debe usarse en conjunto con controls = <audio controls>
+    <input type="date" anade un control para ubicar fechas.
+    
+Los siguientes elementos no sirven para esconder contenido para personas con problemas de lectura, puesto que son escondidos para todos.
+    display: none; or visibility: hidden; hides content for everyone, including screen reader users.
+    
+El atributto 'acceskey y configurado como una inicial o numero, permite acceder a atajos por medio del teclado.
+El atributo 'tabindex' permite igualmente estructurar el orden de enfoque de contenido por medio del teclado.
