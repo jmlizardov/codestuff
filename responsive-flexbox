@@ -1,0 +1,43 @@
+Media Query - Herramienta introducida enSe  CSS3 que permite adaptar la visualizacion a cada dispositivo.
+  Solamente coincide si el dispositivo coincide con dichas medidas. Por ej:
+     
+     @media (min-height: 350px) { /* Aqui se aplicaran las reglas condicionales de CSS para cada caso */ }
+     
+     EJEMPLO:::::::
+        @media (max-height: 800px) {
+  p {
+    font-size: 10px;
+    }
+ }
+
+Imagenes en resolucion retina:
+    Para crearlas, se debe especificar el tama;o y ancho por la mitad del tamano original. 
+    
+Viewport units, tipos:
+
+vw (viewport width): 10vw would be 10% of the viewport's width.
+vh (viewport height): 3vh would be 3% of the viewport's height.
+vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+
+FLEXBOX:::::
+    display: flex; permite crear distribuciones responsive.
+ 
+Igualmente, existe el elemento flex-direction para alinear elementos en columnas o bloques horizontales.
+
+Variables importantes: justify-content, align-items, flex-wrap.
+
+flex-wrap permite distribuir el contenido a lo largo del contenedor sin que este tenga espacios sin rellenar.
+  
+  flex-shrink: permite achicar contenidos para que no se desborden del contenedor.
+  flex-grow: lo contrario al primero.
+  flex-basis: tama;o inicial del contenedor.
+  
+  Se achican o agrandan en funcion al otro elemento.
+  
+  
+Shortcut para describir la funcion shrink, grow y basis:
+  flex: x(grow) y(shrink) z(basis). Por default: flex: 0 1 auto;
+  
+align-self: permite manipular individualmente la distribucion de cada elemento.
