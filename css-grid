@@ -1,0 +1,18 @@
+Los elementos principales son llamados container y los subsidiarios, items.
+
+grid-template-columns permite dividir en columnas a traves de la grilla. Ej: grid-template-columns: 50px 50px;
+grid-template-rows permite definir el alto de cada parte de la columna. 
+
+Anadir espacios horizontales entre las columnas: grid-column-gap.
+:: espacios verticales = grid-row-gap.
+
+  grid-column: permite manejar el espacio que consume cada item.
+  si queremos que consuma en una casilla de 3x3 de la primera a la ultima: 1 / 3. 
+  
+justify-self nos permite adaptar el contenido a los extremos o centros del contenedor (horizontal). justify-items (todos).
+      vertical = align-self.
+      
+grid-template-areas permite agrupar areas bajo grupos de rows.
+
+  auto-fill; auto-fit;
+  auto-fill rellena con clones similares para ocupar el container y auto-fit ajusta en tamano para rellenar el container. 
